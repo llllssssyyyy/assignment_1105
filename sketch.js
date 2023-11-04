@@ -13,8 +13,8 @@ function draw() {
 
 // 간단한 파티클 클래스
 let Particle = function(position) {
-  this.acceleration = createVector(1, -1);
-  this.velocity = createVector(random(-1, 1), random(-1, 0));
+  this.acceleration = createVector(0.7, -0.7);
+  this.velocity = createVector(random(0, 0), random(-2, 2));
   this.position = position.copy();
   this.lifespan = 255;
 };
