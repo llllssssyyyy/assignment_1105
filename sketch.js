@@ -2,11 +2,11 @@ let system;
 
 function setup() {
   createCanvas(720, 400);
-  system = new ParticleSystem(createVector(width / 2, 200));
+  system = new ParticleSystem(createVector(width / 4, 300));
 }
 
 function draw() {
-  background(51);
+  background(20,0,50);
   system.addParticle();
   system.run();
 }
