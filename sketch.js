@@ -34,9 +34,9 @@ Particle.prototype.update = function(){
 // 화면에 보이기 위한 메소드
 Particle.prototype.display = function() {
   stroke(200, this.lifespan);
-  strokeWeight(2);
-  fill(127, this.lifespan);
-  ellipse(this.position.x, this.position.y, 12, 12);
+  strokeWeight(0);
+  fill(random(200,255),random(0,150),0, this.lifespan);
+  ellipse(this.position.x, this.position.y, 30, 30);
 };
 
 // 파티클이 여전히 쓸만한가요?
